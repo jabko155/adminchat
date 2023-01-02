@@ -1,0 +1,19 @@
+package adminchat.adminchat;
+
+import adminchat.adminchat.Commands.Ac;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public final class Main extends JavaPlugin {
+
+    @Override
+    public void onEnable() {
+        getCommand("ac").setExecutor(new Ac());
+        // Plugin startup logic
+
+    }
+
+    @Override
+    public void onDisable() {
+        // Plugin shutdown logic
+    }
+}
